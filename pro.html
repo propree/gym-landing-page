@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preepro gym</title>
+<link rel="stylesheet" href="propree.css">
+<style>
+    body{
+        font-family: monospace;
+        color: white;
+        margin: 0px;
+        padding: 0px; 
+        background:url(bg2.jpg);
+        /* width: 16005px; */
+       
+       
+}
+.left{
+/* border: 2px solid red; */
+display: inline-block;
+position: absolute;
+    left: 23px;
+    top: 45px;
+}
+.mid {
+    display: block;
+    width: 36%;
+    margin: 45px auto;
+    border: 2px solid rgb(151, 246, 200);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    transition: backdrop-filter 0.3s, filter 0.3s;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.mid:hover {
+    background-color: transparent; /* or any color you want */
+    backdrop-filter: blur(12px);
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: underline;
+}
+
+.right{
+    position: absolute;
+    right: 23px;
+    top: 45px;
+    display: inline-block;
+/* border: 2px solid rgb(107, 170, 0); */
+
+
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    text-decoration: none;
+    padding:  20px 17px;
+}
+.navbar li a:hover{
+    color: grey;
+    text-decoration: dotted;
+}
+.left img{
+    width: 103px;
+    
+}
+.left div{
+    text-align: center;
+    line-height: 0px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 5px 13px;
+    border-radius: 9px;
+    border: 2px solid blue;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(44, 44, 44);
+}
+.container{
+    border: 2px solid cyan;
+    margin: 59px 16px;
+    width: 30%;
+    padding: 80px 7px;
+    border-radius: 10px;    
+}
+.form-group input{
+    font-family: monospace;
+
+    background-color: rgb(73, 72, 72);
+    text-align: center;
+    display: block;
+    width: 372px;
+    padding: 10px;
+    margin: 7px auto;
+    border: 1px solid cyan;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 189px;
+    margin:  15px auto;
+    
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>preepro fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Fitness tester</li>
+                <li><a href="#"></a>about us </li>
+                <li><a href="#"></a>contact us </li>
+            </ul>
+            
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+             <button class="btn">call us</button>
+             <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join Today!!</h1>
+       <form action="noaction.php">
+        <div class="form-group"><input type="text" placeholder="Enter your name"> </div>
+        <div class="form-group"><input type="text" placeholder="phone Number"></div>
+        <div class="form-group"><input type="text" placeholder="Email-Id"></div>
+        <div class="form-group"><input type="text" placeholder="why you are interested"></div>
+       </form>
+       <button class="btn">Submit</button>
+
+    </div>
+
+    
+</body>
+</html>
